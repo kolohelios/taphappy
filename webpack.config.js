@@ -7,8 +7,8 @@ module.exports = {
     './App.js'
   ],
   output: {
-    path: path.join(__dirname, 'app'),
-    filename: './build/bundle.js'
+    path: path.join(__dirname, '/'),
+    filename: '/build/bundle.js'
   },
   devServer: {
     inline: true
