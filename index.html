@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+@keyframes activeNyan {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+@keyframes victoryNyan {
+  0% { transform: scale(1); }
+  25% { transform: scale(2); }
+  50% { transform: scale(4); }
+  100% { transform: scale(8); }
+}
+
+</style>
+
+<body style="position: fixed; background-image: url(assets/galaxy.jpg); background-repeat: no-repeat; background-size: cover; user-select: none; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; -webkit-touch-callout: none;">
+  <div id="app">
+    Loading...
+  </div>
+
+  <script src="build/bundle.js"></script>
+</body>
+</html>
