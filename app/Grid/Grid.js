@@ -78,7 +78,7 @@ let Grid = React.createClass({
       return <Circle key={i} x={circle.x} y={circle.y} color={circle.color} highlight={self.state.highlight[i]} />
     });
     return (
-      <div>
+      <div className="grid">
         <Panel coins={this.state.coins} timer={this.state.timer} totalCoins={grids}/>
         <Sound url="../assets/coin-drop-4.mp3" playStatus={this.state.playSound ? Sound.status.PLAYING : Sound.status.STOPPED} onFinishedPlaying={this.stopPlaying}/>
         {circles}
